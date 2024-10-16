@@ -22,7 +22,11 @@ public:
     FX_UTILITY = 3
   };
 
+  bool script_on(Utility);
+
   std::string * UTILITY_SOURCE_BIN;
   void CreateFx(Utility FX, int xpos, int ypos, int zpos, const char * name, Utility type);
+  void ApplyFx(Utility&);
+  std::string FX_UTIL_NAME;
 
 };
